@@ -21,8 +21,8 @@ export default function Navbar() {
   );
 
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div className="bg-base-100">
+      <div className="navbar w-4/5 mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -48,7 +48,7 @@ export default function Navbar() {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">Winter Clothing</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-6 px-1">{links}</ul>
