@@ -13,22 +13,27 @@ import { GoogleAuthProvider } from "firebase/auth";
 export const authContext = createContext();
 export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const createUser = (email, password) => {
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
   const updateUser = (updatedData) => {
-    updateProfile(auth.currentUser, updatedData);
+    setLoading(true);
+    return updateProfile(auth.currentUser, updatedData);
   };
   const signInWithGoogle = (navigate) => {
     const googleProvider = new GoogleAuthProvider();
     signInWithPopup(auth, googleProvider).then((result) => {
       setUser(result.user);
+      setLoading(true);
       navigate("/");
     });
   };
 
   const signInUser = (email, password) => {
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
   const signOutUser = () => {
@@ -41,6 +46,7 @@ export default function AuthProvider({ children }) {
       } else {
         setUser(null);
       }
+      setLoading(false);
       return () => unsubscribe();
     });
   }, []);
@@ -53,6 +59,7 @@ export default function AuthProvider({ children }) {
     signInWithGoogle,
     signInUser,
     signOutUser,
+    loading,
   };
 
   return (

@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthProvider";
 
 export default function Login() {
+  const location = useLocation();
+  console.log(location);
   const { signInUser, setUser, signInWithGoogle } = useContext(authContext);
   const navigate = useNavigate();
   const handleSubmit = (e) => {
@@ -13,6 +15,7 @@ export default function Login() {
     signInUser(email, password).then((result) => {
       setUser(result.user);
       console.log(result.user);
+      navigate(location?.state ? location.state : "/");
     });
   };
   return (
