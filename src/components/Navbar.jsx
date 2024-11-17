@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const links = (
@@ -54,7 +54,9 @@ export default function Navbar() {
           <ul className="menu menu-horizontal gap-6 px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Login</a>
+          <Link to="/login" className="btn">
+            Login
+          </Link>
         </div>
       </div>
     </div>
