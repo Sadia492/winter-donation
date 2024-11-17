@@ -56,14 +56,26 @@ export default function Navbar() {
           <ul className="menu menu-horizontal gap-6 px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login" className="btn">
-            Login
-          </Link>
-          {user && (
-            <Link onClick={signOutUser} className="btn">
-              Log out
+          {user ? (
+            <div className="flex items-center gap-2">
+              <img
+                className="w-10 h-10 rounded-full"
+                src={user.photoURL}
+                alt=""
+              />
+              <Link onClick={signOutUser} className="btn">
+                Log out
+              </Link>
+            </div>
+          ) : (
+            <Link to="/login" className="btn">
+              Login
             </Link>
           )}
+
+          {/* {user && (
+            
+          )} */}
         </div>
       </div>
     </div>
