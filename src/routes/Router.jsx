@@ -7,6 +7,7 @@ import Dashboard from "../pages/Dashboard";
 import DonationDetails from "../pages/DonationDetails";
 import Login from "../components/Login";
 import Register from "../components/Register";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -41,7 +42,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/details/:detailsId",
-        element: <DonationDetails></DonationDetails>,
+        element: (
+          <PrivateRoute>
+            <DonationDetails></DonationDetails>
+          </PrivateRoute>
+        ),
         loader: () => fetch("/donations.json"),
       },
     ],

@@ -3,6 +3,8 @@ import { authContext } from "../AuthProvider/AuthProvider";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
+  const { user, signOutUser } = useContext(authContext);
+
   const links = (
     <>
       <NavLink to="/">
@@ -57,6 +59,11 @@ export default function Navbar() {
           <Link to="/login" className="btn">
             Login
           </Link>
+          {user && (
+            <Link onClick={signOutUser} className="btn">
+              Log out
+            </Link>
+          )}
         </div>
       </div>
     </div>
