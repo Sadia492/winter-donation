@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import DonationCampaigns from "../pages/DonationCampaigns";
 import HowToHelp from "../pages/HowToHelp";
 import Dashboard from "../pages/Dashboard";
+import DonationDetails from "../pages/DonationDetails";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/details/:detailsId",
+        element: <DonationDetails></DonationDetails>,
+        loader: () => fetch("/donations.json"),
       },
     ],
   },

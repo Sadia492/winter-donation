@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Card({ donation }) {
-  const { title, image, description, division } = donation;
+  const { title, image, description, division, id } = donation;
   return (
     <div>
       <div className="card bg-base-100 h-full shadow-xl">
@@ -14,7 +15,9 @@ export default function Card({ donation }) {
           <div className="card-actions justify-start">
             <div className="badge badge-outline p-4">{division}</div>
           </div>
-          <button className="btn">Donate Now</button>
+          <Link to={`/details/${id}`} className="btn">
+            Donate Now
+          </Link>
         </div>
       </div>
     </div>
