@@ -5,16 +5,16 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   const links = (
     <>
-      <NavLink>
+      <NavLink to="/">
         <li>Home</li>
       </NavLink>
-      <NavLink>
+      <NavLink to="/donation">
         <li>Donation Campaigns</li>
       </NavLink>
-      <NavLink>
+      <NavLink to="/help">
         <li>How to Help</li>
       </NavLink>
-      <NavLink>
+      <NavLink to="/dashboard">
         <li>Dashboard</li>
       </NavLink>
     </>

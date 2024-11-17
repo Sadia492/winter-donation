@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Winter Clothing for Dhaka City",
+    "image": "https://i.ibb.co.com/3M7WMQ6/115773659-girl-holding-donation-box-with-warm-winter-clothes.jpg",
+    "description": "This campaign is dedicated to providing winter clothing for low-income families in Dhaka city. We are collecting coats, sweaters, and blankets to help vulnerable individuals survive the cold winter months.",
+    "status": "Active",
+    "contactInfo": "dhaka@winterdonation.org | +8801700000000",
+    "division": "Dhaka"
+  },
+  {
+    "id": 2,
+    "title": "Dhaka's Rural Winter Relief",
+    "image": "https://i.ibb.co.com/3M7WMQ6/115773659-girl-holding-donation-box-with-warm-winter-clothes.jpg",
+    "description": "This campaign targets rural areas around Dhaka, where many people struggle to stay warm in the winter. Donations of warm clothing are desperately needed to help these communities.",
+    "status": "Active",
+    "contactInfo": "dhaka_rural@winterrelief.org | +8801701111111",
+    "division": "Dhaka"
+  },
+  {
+    "id": 3,
+    "title": "Khulna Winter Clothing Drive",
+    "image": "https://i.ibb.co.com/3M7WMQ6/115773659-girl-holding-donation-box-with-warm-winter-clothes.jpg",
+    "description": "Help the people of Khulna stay warm this winter by donating clothing and essential winter supplies. This campaign supports low-income families in both urban and rural parts of the division.",
+    "status": "Active",
+    "contactInfo": "khulna@winteraid.org | +8801710000000",
+    "division": "Khulna"
+  },
+  {
+    "id": 4,
+    "title": "Khulna: Warm Clothes for Villagers",
+    "image": "https://i.ibb.co.com/3M7WMQ6/115773659-girl-holding-donation-box-with-warm-winter-clothes.jpg",
+    "description": "This campaign is focused on providing winter clothing to the rural villages of Khulna. Many people here live below the poverty line and are in urgent need of warm clothing during the winter.",
+    "status": "Active",
+    "contactInfo": "khulna_villagers@donate.org | +8801711111111",
+    "division": "Khulna"
+  },
+  {
+    "id": 5,
+    "title": "Chittagong Winter Clothing Distribution",
+    "image": "https://i.ibb.co.com/3M7WMQ6/115773659-girl-holding-donation-box-with-warm-winter-clothes.jpg",
+    "description": "Our campaign in Chittagong aims to provide essential winter clothing to families affected by the cold weather. We focus on the needs of rural areas and vulnerable communities.",
+    "status": "Active",
+    "contactInfo": "chittagong@winterhelp.org | +8801722222222",
+    "division": "Chittagong"
+  },
+  {
+    "id": 6,
+    "title": "Chittagong's Urban Winter Relief",
+    "image": "https://i.ibb.co.com/3M7WMQ6/115773659-girl-holding-donation-box-with-warm-winter-clothes.jpg",
+    "description": "This campaign targets urban areas in Chittagong, where many people are homeless or living in poverty. Donations of warm clothing are essential for those struggling to survive the winter months.",
+    "status": "Active",
+    "contactInfo": "urban_chittagong@winterrelief.org | +8801723333333",
+    "division": "Chittagong"
+  },
+  {
+    "id": 7,
+    "title": "Rajshahi Winter Clothing Donation",
+    "image": "https://i.ibb.co.com/3M7WMQ6/115773659-girl-holding-donation-box-with-warm-winter-clothes.jpg",
+    "description": "This campaign is focused on Rajshahi, aiming to provide warm clothing to rural families affected by the cold winter. Your donations can help keep these families warm and safe.",
+    "status": "Active",
+    "contactInfo": "rajshahi@winterdonation.org | +8801734444444",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 8,
+    "title": "Rajshahi: Help Families Stay Warm",
+    "image": "https://i.ibb.co.com/3M7WMQ6/115773659-girl-holding-donation-box-with-warm-winter-clothes.jpg",
+    "description": "Aimed at the rural villages of Rajshahi, this campaign seeks donations of warm clothing and essential items to help families cope with the winter cold.",
+    "status": "Active",
+    "contactInfo": "rajshahi_rural@help.org | +8801735555555",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 9,
+    "title": "Jessore Winter Relief for the Needy",
+    "image": "https://i.ibb.co.com/3M7WMQ6/115773659-girl-holding-donation-box-with-warm-winter-clothes.jpg",
+    "description": "Join us in providing winter clothing to the underprivileged in Jessore. Your donations can help protect vulnerable people from the severe cold during the winter months.",
+    "status": "Active",
+    "contactInfo": "jessore@winterdonation.org | +8801746666666",
+    "division": "Jessore"
+  },
+  {
+    "id": 10,
+    "title": "Jessore's Winter Clothing Campaign",
+    "image": "https://i.ibb.co.com/3M7WMQ6/115773659-girl-holding-donation-box-with-warm-winter-clothes.jpg",
+    "description": "This campaign is dedicated to providing essential winter clothing for low-income families in Jessore. Your support will help ensure that those in need have the warmth they deserve this winter.",
+    "status": "Active",
+    "contactInfo": "jessore@helpwinter.org | +8801747777777",
+    "division": "Jessore"
+  }
+]
