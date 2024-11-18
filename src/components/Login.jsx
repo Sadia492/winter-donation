@@ -1,26 +1,37 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthProvider";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 export default function Login() {
   const location = useLocation();
-  console.log(location);
+  const [show, setShow] = useState(false);
   const { signInUser, setUser, signInWithGoogle } = useContext(authContext);
+  const [error, setError] = useState("");
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
     const email = form.get("email");
     const password = form.get("password");
-    signInUser(email, password).then((result) => {
-      setUser(result.user);
-      console.log(result.user);
-      navigate(location?.state ? location.state : "/");
-    });
+    signInUser(email, password)
+      .then((result) => {
+        setUser(result.user);
+        console.log(result.user);
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((err) => {
+        // setError(err.code);
+        toast.error(err.code);
+      });
+    e.target.reset();
   };
   return (
     <div>
       <div className="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl">
+        <h2 className="text-center font-bold text-2xl mt-4">Login</h2>
         <form onSubmit={handleSubmit} className="card-body">
           <div className="form-control">
             <label className="label">
@@ -38,13 +49,18 @@ export default function Login() {
             <label className="label">
               <span className="label-text">Password</span>
             </label>
-            <input
-              type="password"
-              name="password"
-              placeholder="password"
-              className="input input-bordered"
-              required
-            />
+            <label className="input input-bordered flex  justify-between items-center gap-2">
+              <input
+                type={show ? "text" : "password"}
+                name="password"
+                placeholder="password"
+                className=""
+                required
+              />
+              <button onClick={() => setShow(!show)} type="button" className="">
+                {show ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+              </button>
+            </label>
             <label className="label">
               <a href="#" className="label-text-alt link link-hover">
                 Forgot password?

@@ -1,11 +1,16 @@
 import React, { useContext, useState } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 export default function Register() {
   const { createUser, setUser, updateUser, signInWithGoogle } =
     useContext(authContext);
   const [error, setError] = useState("");
+  const [show, setShow] = useState(false);
+
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -35,8 +40,8 @@ export default function Register() {
         e.target.reset();
         navigate("/");
       })
-      .catch((error) => {
-        console.log(error.message);
+      .catch((err) => {
+        toast.error(err.code);
       });
   };
   return (
@@ -86,13 +91,18 @@ export default function Register() {
             <label className="label">
               <span className="label-text">Password</span>
             </label>
-            <input
-              type="password"
-              name="password"
-              placeholder="password"
-              className="input input-bordered"
-              required
-            />
+            <label className="input input-bordered flex  justify-between items-center gap-2">
+              <input
+                type={show ? "text" : "password"}
+                name="password"
+                placeholder="password"
+                className=""
+                required
+              />
+              <button onClick={() => setShow(!show)} type="button" className="">
+                {show ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+              </button>
+            </label>
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-primary">Register</button>

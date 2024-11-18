@@ -61,7 +61,7 @@ export default function Navbar() {
               <img
                 className="w-10 h-10 rounded-full"
                 src={user.photoURL}
-                alt=""
+                alt="User"
               />
               <Link onClick={signOutUser} className="btn">
                 Log out
@@ -72,10 +72,6 @@ export default function Navbar() {
               Login
             </Link>
           )}
-
-          {/* {user && (
-            
-          )} */}
         </div>
       </div>
     </div>
