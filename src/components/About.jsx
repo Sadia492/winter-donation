@@ -1,13 +1,13 @@
 import React from "react";
-import Lottie from "react-lottie"; // Import Lottie component
+import Lottie from "react-lottie";
 import animationData from "../assets/animations/animation.json";
 export default function About() {
   const defaultOptions = {
-    loop: true, // Set to true for looping
-    autoplay: true, // Set to true for autoplay
-    animationData: animationData, // The animation data imported from the .json file
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice", // Adjusts the animation's scale
+      preserveAspectRatio: "xMidYMid slice",
     },
   };
 
@@ -20,7 +20,7 @@ export default function About() {
         the community. It provides insight into our goals and the team behind
         the initiative, ensuring transparency and trust with our supporters.
       </p>
-      <div className="flex flex-col lg:flex-row justify-between gap-8">
+      <div className="flex flex-col-reverse lg:flex-row justify-between gap-8">
         <div className="font-semibold text-xl space-y-6">
           <p>
             Our Winter Clothing Donation website is dedicated to providing
