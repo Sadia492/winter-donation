@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HelpOption } from "./HelpOption";
 import CoolBg from "../assets/cool-background.png";
+import Aos from "aos";
 export default function HowYouCanHelp() {
   const helpOptions = [
     {
@@ -23,9 +24,12 @@ export default function HowYouCanHelp() {
       link: "/spread-awareness", // Replace with your awareness campaign link
     },
   ];
-  console.log(CoolBg);
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div
+      data-aos="fade-up"
       className={` bg-[url('https://i.ibb.co.com/G7dvRjb/cool-background.png')] bg-no-repeat bg-cover py-12 px-4`}
     >
       <h2 className="text-center text-3xl font-bold mb-8">How You Can Help</h2>

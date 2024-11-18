@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
@@ -26,7 +27,10 @@ export default function DonationDetails() {
   };
 
   return (
-    <div className="w-4/5 mx-auto">
+    <div className="w-4/5 mx-auto mt-20">
+      <Helmet>
+        <title>Winter Donation | Details</title>
+      </Helmet>
       <div className="flex flex-col items-center md:flex-row gap-6 my-8">
         <div className="flex-1">
           <img className="rounded-xl" src={image} alt="" />

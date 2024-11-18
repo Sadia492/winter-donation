@@ -38,7 +38,7 @@ export default function Login() {
   };
   return (
     <div>
-      <div className="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl">
+      <div className="card bg-base-100 w-full mt-20 mx-auto max-w-sm shrink-0 shadow-2xl">
         <h2 className="text-center font-bold text-2xl mt-4">Login</h2>
         <form onSubmit={handleSubmit} className="card-body">
           <div className="form-control">
@@ -81,11 +81,11 @@ export default function Login() {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Login</button>
+            <button className="btn bg-blue-500 text-white">Login</button>
           </div>
           <p className="text-center">
             Dont't have an account please{" "}
-            <Link className="text-blue-700" to="/register">
+            <Link className="text-blue-700 font-bold" to="/register">
               Register
             </Link>
           </p>

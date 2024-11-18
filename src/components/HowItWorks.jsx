@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css"; // Import default styles
 import { FaRegStar, FaSnowflake } from "react-icons/fa"; // Optional: For timeline icons
+import Aos from "aos";
 
 const Timeline = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className=" w-4/5 mx-auto">
+    <div className=" w-4/5 mx-auto" data-aos="fade-up">
       <h2 className="text-center font-bold text-3xl mt-12 mb-3">
         How it works?
       </h2>

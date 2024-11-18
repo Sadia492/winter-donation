@@ -1,13 +1,16 @@
 import React, { useContext } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function Dashboard() {
   const { user } = useContext(authContext);
   return (
-    <div className="bg-[url('https://i.ibb.co.com/G7dvRjb/cool-background.png')] bg-no-repeat bg-cover text-white py-12">
-      <div></div>
-      <h2 className="text-center text-3xl font-bold my-8">
+    <div className="bg-[url('https://i.ibb.co.com/G7dvRjb/cool-background.png')] bg-no-repeat bg-cover pt-16  text-white min-h-[calc(100vh-300px)]">
+      <Helmet>
+        <title>Winter Donation | Dashboard</title>
+      </Helmet>
+      <h2 className="text-center text-3xl font-bold mb-8">
         Welcome {user?.displayName}
       </h2>
 

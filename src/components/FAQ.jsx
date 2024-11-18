@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HumanImg from "../assets/Humaaans.png";
+import Aos from "aos";
 export default function FAQ() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="w-4/5 mx-auto">
+    <div data-aos="fade-up" className="w-4/5 mx-auto">
       <h2 className="text-center font-bold text-3xl mt-12 mb-3">
         Frequently Asked Questions
       </h2>

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Lottie from "react-lottie";
 import animationData from "../assets/animations/animation.json";
+import Aos from "aos";
+import "aos/dist/aos.css";
 export default function About() {
   const defaultOptions = {
     loop: true,
@@ -11,8 +13,11 @@ export default function About() {
     },
   };
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className=" w-4/5 mx-auto">
+    <div className=" w-4/5 mx-auto" data-aos="fade-up">
       <h2 className="text-center font-bold text-3xl mt-12 mb-3">About Us</h2>
       <p className="text-center text-gray-500 mb-6">
         The "About Us" section shares the mission and values of our

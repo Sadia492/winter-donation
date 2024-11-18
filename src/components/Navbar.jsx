@@ -1,10 +1,20 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const { user, signOutUser } = useContext(authContext);
   const { pathname } = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const links = (
     <>
@@ -26,10 +36,12 @@ export default function Navbar() {
   return (
     <div
       className={`${
-        pathname === "/"
-          ? "absolute top-0 left-0 w-full z-20 bg-opacity-0 bg-white"
-          : ""
-      }   text-blue-500 font-bold`}
+        pathname === "/" ? "" : ""
+      }  fixed top-0 left-0 w-full z-20  text-blue-500 font-bold ${
+        isScrolled
+          ? "bg-white bg-opacity-30 backdrop-blur-lg text-white"
+          : "bg-transparent text-black"
+      } transition-all duration-500 ease-in-out`}
     >
       <div className="navbar w-4/5 mx-auto ">
         <div className="navbar-start">
@@ -78,7 +90,7 @@ export default function Navbar() {
               </Link>
             </div>
           ) : (
-            <Link to="/login" className="btn">
+            <Link to="/login" className="btn bg-blue-500 text-white">
               Login
             </Link>
           )}
