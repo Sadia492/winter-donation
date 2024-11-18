@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { FaEye } from "react-icons/fa";
@@ -11,6 +11,7 @@ export default function Login() {
   const { signInUser, setUser, signInWithGoogle } = useContext(authContext);
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const emailRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -27,6 +28,14 @@ export default function Login() {
       });
     e.target.reset();
   };
+  const handleForgetPassword = () => {
+    const email = emailRef.current.value;
+    if (email) {
+      navigate("/forget-password", { state: { email } });
+    } else {
+      toast.error("Please enter an email address.");
+    }
+  };
   return (
     <div>
       <div className="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl">
@@ -39,6 +48,7 @@ export default function Login() {
             <input
               type="email"
               name="email"
+              ref={emailRef}
               placeholder="email"
               className="input input-bordered"
               required
@@ -61,9 +71,13 @@ export default function Login() {
               </button>
             </label>
             <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
+              <button
+                type="button"
+                onClick={handleForgetPassword}
+                className="label-text-alt link link-hover"
+              >
                 Forgot password?
-              </a>
+              </button>
             </label>
           </div>
           <div className="form-control mt-6">
