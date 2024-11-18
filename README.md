@@ -1,8 +1,23 @@
-# React + Vite
+# Winter Donation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Our website aims to connect compassionate donors with individuals in need, ensuring warmth and comfort during harsh winter months. By facilitating easy donations and community-driven support, we strive to bring hope and warmth to vulnerable communities across Bangladesh.
 
-Currently, two official plugins are available:
+#### live URL
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Key Features
+
+- user can know the whole process of donating the cloth.
+- user can go filter their desirable campaign to donate clothes.
+- user can update his/her profile if necessary.
+- user can reset the password if he/she forgets the password.
+
+### npm packages used
+
+- react-helmet-async
+- react-icons
+- react-lottie
+- react-router-dom
+- react-slick
+- react-toastify
+- react-vertical-timeline-component
+- slick-carousel

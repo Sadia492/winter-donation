@@ -72,21 +72,75 @@
     "division": "Rajshahi"
   },
   {
-    "id": 9,
-    "title": "Jessore Winter Relief for the Needy",
-    "image": "https://i.ibb.co.com/NLp2HVV/istockphoto-1465773643-612x612.jpg",
-    "description": "Join us in providing winter clothing to the underprivileged in Jessore. Your donations can help protect vulnerable people from the severe cold during the winter months.",
+    "id": 11,
+    "title": "Barishal Winter Clothing Donation",
+    "image": "https://i.ibb.co.com/m0Z947W/360-F-982579073-Tld-Pa-WAu-NXx-F4-U1t-PWk-ALB3cj-Wph-Xqw-X.jpg",
+    "description": "This campaign focuses on providing winter clothing to the vulnerable people of Barishal. Your donations can help families affected by the winter chill.",
     "status": "Active",
-    "contactInfo": "jessore@winterdonation.org | +8801746666666",
-    "division": "Jessore"
+    "contactInfo": "barishal@donatewinter.org | +8801766666666",
+    "division": "Barishal"
   },
   {
-    "id": 10,
-    "title": "Jessore's Winter Clothing Campaign",
-    "image": "https://i.ibb.co.com/m0Z947W/360-F-982579073-Tld-Pa-WAu-NXx-F4-U1t-PWk-ALB3cj-Wph-Xqw-X.jpg",
-    "description": "This campaign is dedicated to providing essential winter clothing for low-income families in Jessore. Your support will help ensure that those in need have the warmth they deserve this winter.",
+    "id": 12,
+    "title": "Barishal's Rural Winter Relief",
+    "image": "https://i.ibb.co.com/NLp2HVV/istockphoto-1465773643-612x612.jpg",
+    "description": "Help provide winter clothing to the people of rural Barishal. Many families here face severe hardships during the winter months.",
     "status": "Active",
-    "contactInfo": "jessore@helpwinter.org | +8801747777777",
-    "division": "Jessore"
+    "contactInfo": "rural_barishal@winterhelp.org | +8801767777777",
+    "division": "Barishal"
+  },
+  {
+    "id": 13,
+    "title": "Sylhet Winter Clothing Relief",
+    "image": "https://i.ibb.co.com/XCkd1Ck/istockphoto-2180944849-612x612.jpg",
+    "description": "Join our campaign to provide warm clothing to the underprivileged in Sylhet. Your donations can help people stay warm in the harsh winter months.",
+    "status": "Active",
+    "contactInfo": "sylhet@winterrelief.org | +8801755555555",
+    "division": "Sylhet"
+  },
+  {
+    "id": 14,
+    "title": "Sylhet: Warm Clothes for the Needy",
+    "image": "https://i.ibb.co.com/P5RPzPq/istockphoto-1805609952-612x612.jpg",
+    "description": "This campaign focuses on providing winter clothing to rural Sylhet, where many people struggle to survive the cold winter.",
+    "status": "Active",
+    "contactInfo": "sylhet_rural@winteraid.org | +8801756666666",
+    "division": "Sylhet"
+  },
+  {
+    "id": 15,
+    "title": "Rangpur Winter Clothing Campaign",
+    "image": "https://i.ibb.co.com/XCkd1Ck/istockphoto-2180944849-612x612.jpg",
+    "description": "Help the people of Rangpur stay warm during the winter by contributing to our clothing campaign. Your support will make a real difference in their lives.",
+    "status": "Active",
+    "contactInfo": "rangpur@winterhelp.org | +8801744444444",
+    "division": "Rangpur"
+  },
+  {
+    "id": 16,
+    "title": "Rangpur's Rural Winter Relief",
+    "image": "https://i.ibb.co.com/ZWGJ2Sr/istockphoto-1388313436-612x612.jpg",
+    "description": "This campaign is aimed at providing winter clothing to the rural communities in Rangpur, where many people are living without sufficient warm clothing.",
+    "status": "Active",
+    "contactInfo": "rangpur_rural@winterdonation.org | +8801745555555",
+    "division": "Rangpur"
+  },
+  {
+    "id": 17,
+    "title": "Mymensingh Winter Relief",
+    "image": "https://i.ibb.co.com/Bjf4Nnt/istockphoto-1387863600-612x612.jpg",
+    "description": "Join us in providing winter relief to the people of Mymensingh. Your donations can help families cope with the harsh cold winter months.",
+    "status": "Active",
+    "contactInfo": "mymensingh@winterrelief.org | +8801754444444",
+    "division": "Mymensingh"
+  },
+  {
+    "id": 18,
+    "title": "Mymensingh: Warm Clothes for Villagers",
+    "image": "https://i.ibb.co.com/R7NcvYw/istockphoto-1367513846-612x612.jpg",
+    "description": "This campaign aims to provide winter clothing for the rural areas of Mymensingh, where many people are in urgent need of warm clothing to survive the winter.",
+    "status": "Active",
+    "contactInfo": "mymensingh_villagers@winterdonation.org | +8801757777777",
+    "division": "Mymensingh"
   }
 ]

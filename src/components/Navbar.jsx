@@ -35,11 +35,10 @@ export default function Navbar() {
 
   return (
     <div
-      className={`${
-        pathname === "/" ? "" : ""
+      className={`
       }  fixed top-0 left-0 w-full z-20  text-blue-500 font-bold ${
         isScrolled
-          ? "bg-white bg-opacity-30 backdrop-blur-lg text-white"
+          ? "bg-white bg-opacity-30 backdrop-blur-lg"
           : "bg-transparent text-black"
       } transition-all duration-500 ease-in-out`}
     >

@@ -93,7 +93,37 @@ const Timeline = () => {
               campaign.
             </p>
           </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: "#4e73df", color: "#fff" }}
+            icon={<FaSnowflake />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Step 5: Find Your Nearest Collection Point
+            </h3>
+            <p>
+              After submitting your donation details, locate the nearest
+              collection point where you can drop off your winter clothing. You
+              can find the collection point addresses or contact volunteers
+              listed on our platform.
+            </p>
+          </VerticalTimelineElement>
         </VerticalTimeline>
+        <div className="mt-12 text-white">
+          <h3 className="text-center font-bold text-2xl">
+            Supported Divisions
+          </h3>
+          <p className="text-center mb-6">
+            We are actively supporting campaigns across the following regions:
+          </p>
+          <ul className="flex justify-center gap-4 flex-wrap">
+            <li>Dhaka</li>
+            <li>Chittagong</li>
+            <li>Rajshahi</li>
+            <li>Khulna</li>
+            <li>Jessore</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
