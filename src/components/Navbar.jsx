@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const { user, signOutUser } = useContext(authContext);
+  const { pathname } = useLocation();
 
   const links = (
     <>
@@ -23,7 +24,13 @@ export default function Navbar() {
   );
 
   return (
-    <div className="absolute top-0 left-0 w-full z-20 bg-opacity-0 bg-white  text-blue-500 font-bold">
+    <div
+      className={`${
+        pathname === "/"
+          ? "absolute top-0 left-0 w-full z-20 bg-opacity-0 bg-white"
+          : ""
+      }   text-blue-500 font-bold`}
+    >
       <div className="navbar w-4/5 mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
