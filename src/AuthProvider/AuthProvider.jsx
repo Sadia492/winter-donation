@@ -26,11 +26,14 @@ export default function AuthProvider({ children }) {
   };
   const signInWithGoogle = (navigate) => {
     const googleProvider = new GoogleAuthProvider();
-    signInWithPopup(auth, googleProvider).then((result) => {
-      setUser(result.user);
-      setLoading(true);
-      navigate("/");
-    });
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        setUser(result.user);
+        navigate("/");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   const signInUser = (email, password) => {
@@ -65,6 +68,7 @@ export default function AuthProvider({ children }) {
     signInUser,
     signOutUser,
     loading,
+    setLoading,
     passwordResetEmail,
   };
 
