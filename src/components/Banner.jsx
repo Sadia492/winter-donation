@@ -20,7 +20,7 @@ export default function Banner() {
       background:
         "https://i.ibb.co.com/s28ZYVB/DALL-E-2024-11-18-13-37-34-A-heartwarming-illustration-of-a-winter-donation-drive-set-in-a-light-fro.webp", // Corrected URL
       text: "Welcome to Winter Clothing Donation",
-      textColor: "text-blue-500",
+      textColor: "text-blue-600",
     },
     {
       background:

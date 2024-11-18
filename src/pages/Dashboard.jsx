@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 export default function Dashboard() {
   const { user } = useContext(authContext);
   return (
-    <div className="bg-[url('https://i.ibb.co.com/G7dvRjb/cool-background.png')] bg-no-repeat bg-cover pt-16  text-white min-h-[calc(100vh-300px)]">
+    <div className="bg-[url('https://i.ibb.co.com/G7dvRjb/cool-background.png')] bg-no-repeat bg-cover pt-16 pb-20 text-white">
       <Helmet>
         <title>Winter Donation | Dashboard</title>
       </Helmet>

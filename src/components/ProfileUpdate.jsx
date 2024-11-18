@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function ProfileUpdate() {
   const { updateUser, setLoading } = useContext(authContext);
@@ -21,7 +22,10 @@ export default function ProfileUpdate() {
   };
 
   return (
-    <div className="card bg-base-100 mx-auto w-full max-w-sm shrink-0 shadow-2xl">
+    <div className="card bg-base-100 mt-20 mx-auto w-full max-w-sm shrink-0 shadow-2xl">
+      <Helmet>
+        <title>Winter Donation | Update</title>
+      </Helmet>
       <form onSubmit={handleUpdate} className="card-body">
         <div className="form-control">
           <label className="label">

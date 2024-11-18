@@ -20,7 +20,7 @@ export default function MainLayout() {
           <Navbar></Navbar>
         </nav>
       </header>
-      <main className="min-h-[calc(100vh-299px)]">
+      <main className="min-h-[calc(100vh-330px)]">
         <Outlet></Outlet>
       </main>
 

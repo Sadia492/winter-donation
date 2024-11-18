@@ -4,7 +4,8 @@ import { authContext } from "../AuthProvider/AuthProvider";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { toast } from "react-toastify";
-
+import { FaGoogle } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 export default function Login() {
   const location = useLocation();
   const [show, setShow] = useState(false);
@@ -37,8 +38,20 @@ export default function Login() {
     }
   };
   return (
-    <div>
-      <div className="card bg-base-100 w-full mt-20 mx-auto max-w-sm shrink-0 shadow-2xl">
+    <div className=" mt-20">
+      <Helmet>
+        <title>Winter Donation | Login</title>
+      </Helmet>
+      <div className="text-center flex justify-center mb-3 items-center">
+        <button
+          onClick={() => signInWithGoogle(navigate)}
+          className="border-2 rounded-full gap-3 w-80 text-center py-4 px-6 flex items-center justify-center text-xl"
+        >
+          <FaGoogle></FaGoogle>
+          Sign In With Google
+        </button>
+      </div>
+      <div className="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl">
         <h2 className="text-center font-bold text-2xl mt-4">Login</h2>
         <form onSubmit={handleSubmit} className="card-body">
           <div className="form-control">
@@ -91,12 +104,6 @@ export default function Login() {
           </p>
         </form>
       </div>
-      <button
-        onClick={() => signInWithGoogle(navigate)}
-        className="block mx-auto btn"
-      >
-        Sign In With Google
-      </button>
     </div>
   );
 }

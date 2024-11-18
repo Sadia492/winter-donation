@@ -59,7 +59,7 @@ export default function Footer() {
         </nav>
       </footer>
       <aside>
-        <p className="text-center">
+        <p className="text-center py-4">
           Copyright © {new Date().getFullYear()} - All right reserved by Winter
           Donation
         </p>

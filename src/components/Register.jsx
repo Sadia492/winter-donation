@@ -4,7 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { toast } from "react-toastify";
-
+import { FaGoogle } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 export default function Register() {
   const { createUser, setUser, updateUser, signInWithGoogle } =
     useContext(authContext);
@@ -45,7 +46,19 @@ export default function Register() {
       });
   };
   return (
-    <div>
+    <div className="mt-20">
+      <Helmet>
+        <title>Winter Donation | Register</title>
+      </Helmet>
+      <div className="text-center flex justify-center mb-3 items-center">
+        <button
+          onClick={() => signInWithGoogle(navigate)}
+          className="border-2 rounded-full gap-3 w-80 text-center py-4 px-6 flex items-center justify-center text-xl"
+        >
+          <FaGoogle></FaGoogle>
+          Sign In With Google
+        </button>
+      </div>
       <div className="card bg-base-100 mx-auto w-full max-w-sm shrink-0 shadow-2xl">
         <h2 className="text-2xl font-bold text-center mb-2 mt-4">
           Registration
@@ -116,12 +129,6 @@ export default function Register() {
           </p>
         </form>
       </div>
-      <button
-        onClick={() => signInWithGoogle(navigate)}
-        className="block mx-auto btn"
-      >
-        Sign Up With Google
-      </button>
     </div>
   );
 }

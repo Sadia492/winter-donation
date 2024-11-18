@@ -18,7 +18,10 @@ export default function ForgetPassword() {
       });
   };
   return (
-    <div className="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl">
+    <div className="card bg-base-100 w-full mt-20 mx-auto max-w-sm shrink-0 shadow-2xl">
+      <Helmet>
+        <title>Winter Donation | Forget</title>
+      </Helmet>
       <form className="card-body">
         <div className="form-control">
           <label className="label">
