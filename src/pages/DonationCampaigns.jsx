@@ -7,8 +7,10 @@ export default function DonationCampaigns() {
 
   return (
     <div>
-      <h2 className="text-center font-bold text-2xl">Donation Campaigns</h2>
-      <div className="grid grid-cols-3 gap-6">
+      <h2 className="text-center font-bold text-3xl my-8">
+        Donation Campaigns
+      </h2>
+      <div className="grid grid-cols-3 gap-6 mx-auto w-4/5">
         {donations.map((donation) => (
           <Card key={donation.id} donation={donation}></Card>
         ))}

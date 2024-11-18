@@ -26,19 +26,24 @@ export default function DonationDetails() {
   };
 
   return (
-    <div>
-      <div>
-        <h2 className="text-3xl font-bold">{title}</h2>
-        <div className="my-8">
-          <img className="w-4/5 h-[500px] mx-auto" src={image} alt="" />
+    <div className="w-4/5 mx-auto">
+      <div className="flex flex-col items-center md:flex-row gap-6 my-8">
+        <div className="flex-1">
+          <img className="rounded-xl" src={image} alt="" />
         </div>
-        <p className="text-xl ">{description}</p>
-        <p>{division}</p>
-        <p>{contactInfo}</p>
-        <p className="text-green-500">{status}</p>
+        <div className="flex-1 space-y-6">
+          <h3 className="text-3xl font-bold">{title}</h3>
+          <p className="text-xl ">{description}</p>
+          <p>Division: {division}</p>
+          <p>Contact Information: {contactInfo}</p>
+          <p className="text-green-500">Status: {status}</p>
+        </div>
       </div>
-      <div className="bg-base-100 w-full mx-auto shadow-2xl p-8">
-        <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-6">
+      <div className="bg-base-100 w-full mx-auto shadow-2xl p-8 rounded-xl">
+        <form
+          onSubmit={handleSubmit}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
           <div className="form-control">
             <label className="label">
               <span className="label-text">Quantity of items</span>
@@ -61,7 +66,7 @@ export default function DonationDetails() {
               required
             />
           </div>
-          <div className="col-span-2 form-control">
+          <div className="md:col-span-2 form-control">
             <label className="label">
               <span className="label-text">Pickup location</span>
             </label>
@@ -72,7 +77,7 @@ export default function DonationDetails() {
               required
             />
           </div>
-          <div className="col-span-2 form-control">
+          <div className="md:col-span-2 form-control">
             <label className="label">
               <span className="label-text">
                 Additional notes <span className="text-red-500">Optional</span>
@@ -83,8 +88,8 @@ export default function DonationDetails() {
               placeholder="Additional Notes"
             ></textarea>
           </div>
-          <div className="form-control col-span-2 mt-6">
-            <button className="btn btn-primary">Submit</button>
+          <div className="form-control md:col-span-2 mt-6">
+            <button className="btn bg-blue-500 text-white">Submit</button>
           </div>
         </form>
       </div>
