@@ -23,7 +23,7 @@ export default function Navbar() {
   );
 
   return (
-    <div className="bg-base-100">
+    <div className="absolute top-0 left-0 w-full z-20 bg-opacity-0 bg-white  text-blue-500 font-bold">
       <div className="navbar w-4/5 mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -50,7 +50,7 @@ export default function Navbar() {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Winter Clothing</a>
+          <a className="text-3xl">Winter Donation</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-6 px-1">{links}</ul>
@@ -63,7 +63,10 @@ export default function Navbar() {
                 src={user.photoURL}
                 alt="User"
               />
-              <Link onClick={signOutUser} className="btn">
+              <Link
+                onClick={signOutUser}
+                className="btn bg-blue-500 text-white"
+              >
                 Log out
               </Link>
             </div>

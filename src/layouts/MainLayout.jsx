@@ -11,7 +11,7 @@ export default function MainLayout() {
           <Navbar></Navbar>
         </nav>
       </header>
-      <main className="min-h-[calc(100vh-334px)] w-4/5 mx-auto">
+      <main className="min-h-[calc(100vh-334px)] ">
         <Outlet></Outlet>
       </main>
 

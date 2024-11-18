@@ -1,57 +1,98 @@
 import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css"; // Import default styles
+import { FaRegStar, FaSnowflake } from "react-icons/fa"; // Optional: For timeline icons
 
-export default function HowItWorks() {
+const Timeline = () => {
   return (
-    <div>
-      <h1 className="text-center text-2xl font-bold">
-        How Winter Clothing Donation Works
-      </h1>
-      <p className="text-center text-gray-500">
-        The Winter Clothing Donation platform is dedicated to connecting
-        generous donors with people in need across Bangladesh, especially during
-        the cold winter months. Here’s how you can make a difference and help us
-        bring warmth to those in need.
+    <div className=" w-4/5 mx-auto">
+      <h2 className="text-center font-bold text-3xl mt-12 mb-3">
+        How it works?
+      </h2>
+      <p className="text-center text-gray-500 mb-6">
+        The "How It Works" section provides a step-by-step guide to help users
+        understand the process of making a donation. It outlines the simple
+        actions involved, from selecting a campaign to submitting your donation,
+        ensuring a smooth and clear experience for all participants.
       </p>
-      <div>
-        <p>
-          1. How to Donate: Step 1: Browse Donation Campaigns Start by browsing
-          through the donation campaigns listed on the website. Each campaign
-          focuses on a specific region of Bangladesh and lists the needs of
-          vulnerable communities. Step 2: Choose a Campaign Select the campaign
-          you’d like to support. You can read more details about each campaign,
-          including the specific items needed, such as jackets, sweaters, and
-          blankets. Step 3: Donate Clothing Gather your clean, gently-used
-          winter clothing and accessories. You can donate items such as: Coats
-          Sweaters Gloves Scarves Hats Blankets Alternatively, if you prefer,
-          you can contribute money for the purchase of new winter clothing. Step
-          4: Fill Out the Donation Form Once you’ve selected a campaign, click
-          on the “Donate” button. You will be prompted to fill out a simple
-          donation form that includes your contact details and the number of
-          items you wish to donate. Step 5: Drop Off or Arrange Pickup After
-          filling out the donation form, you'll be given information about the
-          nearest collection point or volunteer pickup services in your area. If
-          you’re unable to drop off your donation, we can arrange a pickup for
-          you. Step 6: Confirmation Once your donation is received, you will
-          receive a confirmation email or message thanking you for your
-          generosity. You'll also be updated about the impact of your donation.
-          2. Collection Points: Collection points are set up across various
-          divisions, making it easy for you to donate. These are locations where
-          you can drop off your donations. Some of the collection points may
-          include local community centers, schools, or volunteer organizations.
-          For your convenience, the website provides an interactive map of
-          collection points in your division. You can find the nearest drop-off
-          center or arrange a pickup through our network of volunteers. 3.
-          Supported Divisions: Our donation campaigns support the following
-          divisions in Bangladesh: Dhaka Donations will be accepted for both
-          urban and rural communities within Dhaka. Khulna We are actively
-          collecting donations for low-income communities in Khulna’s urban and
-          rural areas. Chittagong Support is needed for both the city and
-          surrounding rural regions of Chittagong. Rajshahi Donation campaigns
-          are focused on rural areas of Rajshahi, where people are in urgent
-          need of warm clothing. Jessore Jessore’s vulnerable communities will
-          benefit from your donations of winter clothing.
-        </p>
+      <div className="timeline-container rounded-xl bg-[url('https://i.ibb.co.com/NKMjw04/to-protect-665089-1280.jpg')] bg-cover bg-no-repeat bg-blend-overlay bg-blue-600 p-12 bg-center">
+        <VerticalTimeline layout={"1-column-left"}>
+          {/* Timeline Item 1 */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: "#4e73df", color: "#fff" }}
+            icon={<FaSnowflake />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Step 1: Go to Donation campaigns route
+            </h3>
+            <p>
+              Firstly, you have to navigate to the donation campaigns route,
+              which is the specific page or section of the web application where
+              all the available winter clothing donation campaigns are
+              displayed. This route will show a list of campaigns, including
+              details such as their goals, locations, and how users can
+              contribute.
+            </p>
+          </VerticalTimelineElement>
+
+          {/* Timeline Item 2 */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: "#4e73df", color: "#fff" }}
+            icon={<FaSnowflake />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Step 2: Click On the Donate Now button
+            </h3>
+            <p>
+              Secondly, you can click on the "Donate Now" button, which will
+              direct you to the donation form or page. This action allows you to
+              proceed with making a contribution to the selected winter clothing
+              campaign.
+            </p>
+          </VerticalTimelineElement>
+
+          {/* Timeline Item 3 */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: "#4e73df", color: "#fff" }}
+            icon={<FaSnowflake />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Step 3: Fill Up the form
+            </h3>
+            <p>
+              Thirdly, you need to fill up the form with the required details.
+              This includes providing your contact information, selecting the
+              type of donation, and any additional information as requested.
+            </p>
+          </VerticalTimelineElement>
+
+          {/* Timeline Item 4 */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: "#4e73df", color: "#fff" }}
+            icon={<FaSnowflake />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Step 4: Click on the submit
+            </h3>
+            <p>
+              Fourthly, you can click on the "Submit" button to finalize your
+              donation. This action will send your donation details to the
+              system, completing the process. You will then receive a
+              confirmation message acknowledging your contribution to the
+              campaign.
+            </p>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
       </div>
     </div>
   );
-}
+};
+
+export default Timeline;
