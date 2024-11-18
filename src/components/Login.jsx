@@ -23,7 +23,6 @@ export default function Login() {
         navigate(location?.state ? location.state : "/");
       })
       .catch((err) => {
-        // setError(err.code);
         toast.error(err.code);
       });
     e.target.reset();

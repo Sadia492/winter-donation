@@ -8,11 +8,13 @@ import DonationDetails from "../pages/DonationDetails";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import ErrorPage from "../components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -30,7 +32,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard",
-        element: <Dashboard></Dashboard>,
+        element: (
+          <PrivateRoute>
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
@@ -49,6 +55,10 @@ const router = createBrowserRouter([
         ),
         loader: () => fetch("/donations.json"),
       },
+      //   {
+      //     path: "*",
+      //     element: <ErrorPage></ErrorPage>,
+      //   },
     ],
   },
 ]);
