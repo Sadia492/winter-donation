@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
+import { authContext } from "../AuthProvider/AuthProvider";
+import { toast } from "react-toastify";
 
 export default function ForgetPassword() {
+  const { passwordResetEmail } = useContext(authContext);
   const location = useLocation();
   const email = location?.state.email;
-  const handleResetBtn = () => {};
+  const handleResetBtn = () => {
+    passwordResetEmail(email)
+      .then(() => {
+        toast.success("password reset email sent");
+        window.open("https://mail.google.com", "_blank");
+      })
+      .catch((err) => {
+        toast.error(err.code);
+      });
+  };
   return (
     <div className="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl">
       <form className="card-body">
