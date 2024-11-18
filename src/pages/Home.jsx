@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import About from "../components/About";
 import HowItWorks from "../components/HowItWorks";
 import FAQ from "../components/FAQ";
+import HowYouCanHelp from "../components/HowCanYouHelp";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Banner></Banner>
       <About></About>
       <HowItWorks></HowItWorks>
+      <HowYouCanHelp></HowYouCanHelp>
       <FAQ></FAQ>
     </div>
   );
