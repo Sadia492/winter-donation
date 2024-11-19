@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import { FaGoogle } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
 export default function Register() {
-  const { createUser, setUser, updateUser, signInWithGoogle } =
+  const { createUser, setUser, setLoading, updateUser, signInWithGoogle } =
     useContext(authContext);
   const [error, setError] = useState("");
   const [show, setShow] = useState(false);
@@ -43,6 +43,9 @@ export default function Register() {
       })
       .catch((err) => {
         toast.error(err.code);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
   return (
@@ -118,12 +121,12 @@ export default function Register() {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Register</button>
+            <button className="btn bg-blue-500 text-white">Register</button>
           </div>
           {error && <p className="text-red-500 text-center">{error}</p>}
           <p className="text-center">
             Already have an account please{" "}
-            <Link className="text-blue-700" to="/login">
+            <Link className="text-blue-500 font-bold" to="/login">
               Login
             </Link>
           </p>

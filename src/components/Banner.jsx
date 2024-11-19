@@ -20,17 +20,32 @@ export default function Banner() {
       background:
         "https://i.ibb.co.com/s28ZYVB/DALL-E-2024-11-18-13-37-34-A-heartwarming-illustration-of-a-winter-donation-drive-set-in-a-light-fro.webp", // Corrected URL
       text: "Welcome to Winter Clothing Donation",
-      textColor: "text-blue-600",
+      description:
+        "Our Winter Clothing Donation website is dedicated to providing warmth and comfort to those in need across Bangladesh. ",
+      textColor: "text-blue-500",
+    },
+    {
+      background:
+        "https://i.ibb.co.com/3SfXzNV/pexels-julia-m-cameron-6994938.jpg", // Corrected URL
+      text: "Winter Clothing for Dhaka City",
+      description:
+        "This campaign is dedicated to providing winter clothing for low-income families in Dhaka city. We are collecting coats, sweaters, and blankets to help vulnerable individuals survive the cold winter months.",
+      textColor: "text-blue-500",
+    },
+    {
+      background:
+        "https://i.ibb.co.com/Y3HXbXb/istockphoto-1388517849-612x612.jpg", // Corrected URL
+      text: "Khulna: Warm Clothes for Villagers",
+      description:
+        "This campaign is focused on providing winter clothing to the rural villages of Khulna. Many people here live below the poverty line and are in urgent need of warm clothing during the winter.",
+      textColor: "text-blue-500",
     },
     {
       background:
         "https://i.ibb.co.com/Qk0gWCq/pexels-jill-wellington-1638660-327131.jpg", // Corrected URL
-      text: "Help those in need stay warm this winter",
-      textColor: "text-blue-500",
-    },
-    {
-      background: "https://i.ibb.co.com/SQcndrV/ice-1997289-1280.jpg", // Corrected URL
       text: "Your donation can make a difference",
+      description:
+        "Your donation can bring warmth and hope to those in need, ensuring no one faces the harsh winter alone. Together, we can make a meaningful difference in their lives.",
       textColor: "text-blue-500",
     },
   ];
@@ -47,11 +62,12 @@ export default function Banner() {
                 alt=""
               />
               {/* Absolute positioning for text to center it */}
-              <h2
-                className={`absolute text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-bold   ${slide.textColor}  z-10`}
+              <div
+                className={`absolute text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2     ${slide.textColor}  z-10`}
               >
-                {slide.text}
-              </h2>
+                <h2 className="text-5xl font-bold mb-2">{slide.text}</h2>
+                <p className="text-xl font-medium">{slide.description}</p>
+              </div>
             </div>
           </div>
         ))}

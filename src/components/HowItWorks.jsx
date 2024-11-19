@@ -31,7 +31,7 @@ const Timeline = () => {
             icon={<FaSnowflake />}
           >
             <h3 className="vertical-timeline-element-title">
-              Step 1: Go to Donation campaigns route
+              Step 1: Go to Donation campaigns page
             </h3>
             <p>
               Firstly, you have to navigate to the donation campaigns route,
@@ -121,7 +121,10 @@ const Timeline = () => {
             <li>Chittagong</li>
             <li>Rajshahi</li>
             <li>Khulna</li>
-            <li>Jessore</li>
+            <li>Barishal</li>
+            <li>Sylhet</li>
+            <li>Rangpur</li>
+            <li>Mymensingh</li>
           </ul>
         </div>
       </div>

@@ -52,7 +52,9 @@ export default function ProfileUpdate() {
           />
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Update Information</button>
+          <button className="btn bg-blue-500 text-white">
+            Update Information
+          </button>
         </div>
       </form>
     </div>

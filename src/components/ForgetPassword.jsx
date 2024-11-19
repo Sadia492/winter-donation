@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 export default function ForgetPassword() {
   const { passwordResetEmail } = useContext(authContext);
