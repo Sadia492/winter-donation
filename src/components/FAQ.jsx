@@ -6,7 +6,7 @@ export default function FAQ() {
     Aos.init();
   }, []);
   return (
-    <div data-aos="fade-up" className="w-4/5 mx-auto">
+    <div data-aos="fade-up" className="md:w-4/5 w-11/12 mx-auto">
       <h2 className="text-center font-bold text-3xl mt-12 mb-3">
         Frequently Asked Questions
       </h2>

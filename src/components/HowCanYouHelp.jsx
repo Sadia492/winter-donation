@@ -33,7 +33,7 @@ export default function HowYouCanHelp() {
       className={` bg-[url('https://i.ibb.co.com/G7dvRjb/cool-background.png')] bg-no-repeat bg-cover py-12 px-4`}
     >
       <h2 className="text-center text-3xl font-bold mb-8">How You Can Help</h2>
-      <div className="grid grid-cols-1 w-4/5 mx-auto md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+      <div className="grid grid-cols-1 md:w-4/5 w-11/12 mx-auto md:grid-cols-2 lg:grid-cols-3 gap-8 ">
         {helpOptions.map((option, index) => (
           <HelpOption key={index} {...option} />
         ))}

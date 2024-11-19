@@ -12,7 +12,7 @@ const Timeline = () => {
     Aos.init();
   }, []);
   return (
-    <div className=" w-4/5 mx-auto" data-aos="fade-up">
+    <div className="md:w-4/5 w-11/12 mx-auto" data-aos="fade-up">
       <h2 className="text-center font-bold text-3xl mt-12 mb-3">
         How it works?
       </h2>

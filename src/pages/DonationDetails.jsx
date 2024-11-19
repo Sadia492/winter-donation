@@ -26,7 +26,7 @@ export default function DonationDetails() {
   };
 
   return (
-    <div className="w-4/5 mx-auto mt-20">
+    <div className="md:w-4/5 w-11/12 mx-auto mt-20">
       <Helmet>
         <title>Winter Donation | Details</title>
       </Helmet>

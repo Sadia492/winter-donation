@@ -5,7 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="mt-12 bg-blue-600 text-white">
-      <footer className="footer justify-between items-center w-4/5 mx-auto p-10">
+      <footer className="footer justify-between items-center md:w-4/5 w-11/12 mx-auto p-10">
         <aside>
           <h2 className="text-3xl font-bold">Winter Donation</h2>
           <p className="flex items-center text-xl gap-2">

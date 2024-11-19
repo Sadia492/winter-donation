@@ -14,7 +14,7 @@ export default function Dashboard() {
         Welcome {user?.displayName}
       </h2>
 
-      <div className="flex justify-between items-center w-4/5 mx-auto">
+      <div className="flex flex-col md:flex-row gap-2 justify-between items-center md:w-4/5 w-11/12 mx-auto">
         <div>
           <img
             className="w-40 h-40 rounded-full object-top object-cover"

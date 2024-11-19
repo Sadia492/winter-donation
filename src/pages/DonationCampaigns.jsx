@@ -18,7 +18,7 @@ export default function DonationCampaigns() {
         this winter.Your contribution to our campaigns helps us reach vulnerable
         communities and make a lasting impact.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto w-4/5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:w-4/5 w-11/12 mx-auto">
         {donations.map((donation) => (
           <Card key={donation.id} donation={donation}></Card>
         ))}

@@ -8,7 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { FaRegStar, FaSnowflake } from "react-icons/fa";
 export default function HowToHelp() {
   return (
-    <div className="w-4/5 mx-auto mt-20">
+    <div className="md:w-4/5 w-11/12 mx-auto mt-20">
       <Helmet>
         <title>Winter Donation | Help</title>
       </Helmet>

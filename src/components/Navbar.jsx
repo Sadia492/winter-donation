@@ -36,13 +36,13 @@ export default function Navbar() {
   return (
     <div
       className={`
-      }  fixed top-0 left-0 w-full z-20  text-blue-500 font-bold ${
+      }  fixed top-0 left-0 w-full z-20 text-blue-500 font-bold ${
         isScrolled
           ? "bg-white bg-opacity-30 backdrop-blur-lg"
           : "bg-transparent text-black"
       } transition-all duration-500 ease-in-out`}
     >
-      <div className="navbar w-4/5 mx-auto ">
+      <div className="navbar md:w-4/5 w-11/12 mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

@@ -63,7 +63,7 @@ export default function Banner() {
               />
               {/* Absolute positioning for text to center it */}
               <div
-                className={`absolute text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2     ${slide.textColor}  z-10`}
+                className={`absolute text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:w-4/5 w-11/12 mx-auto ${slide.textColor} z-10`}
               >
                 <h2 className="text-5xl font-bold mb-2">{slide.text}</h2>
                 <p className="text-xl font-medium">{slide.description}</p>

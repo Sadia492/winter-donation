@@ -17,7 +17,7 @@ export default function About() {
     Aos.init();
   }, []);
   return (
-    <div className=" w-4/5 mx-auto" data-aos="fade-up">
+    <div className="md:w-4/5 w-11/12 mx-auto" data-aos="fade-up">
       <h2 className="text-center font-bold text-3xl mt-12 mb-3">About Us</h2>
       <p className="text-center text-gray-500 mb-6">
         The "About Us" section shares the mission and values of our

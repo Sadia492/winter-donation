@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Card({ donation }) {
   const { title, image, description, division, id } = donation;
   return (
-    <div className="">
+    <div>
       <div className="card bg-base-100 rounded-xl h-full shadow-xl">
         <figure className="px-8 pt-8 h-50">
           <img className="h-50 rounded-xl" src={image} alt="Shoes" />
