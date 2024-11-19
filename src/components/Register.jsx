@@ -35,7 +35,6 @@ export default function Register() {
 
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
         setUser(result.user);
         updateUser({ displayName: name, photoURL: photo });
         e.target.reset();

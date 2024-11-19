@@ -13,7 +13,6 @@ export default function ProfileUpdate() {
     const photo = form.get("photo");
     updateUser({ displayName: name, photoURL: photo })
       .then(() => {
-        console.log("user updated");
         navigate("/dashboard");
       })
       .finally(() => {

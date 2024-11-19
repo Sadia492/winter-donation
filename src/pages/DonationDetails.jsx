@@ -7,8 +7,7 @@ export default function DonationDetails() {
   const [singleDonation, setSingleDonation] = useState({});
   const donations = useLoaderData();
   const { detailsId } = useParams();
-  console.log(detailsId);
-  console.log(donations);
+
   useEffect(() => {
     const donation = donations.find((donation) => donation.id == detailsId);
     if (donation) {

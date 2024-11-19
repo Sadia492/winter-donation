@@ -21,7 +21,7 @@ export default function Login() {
     signInUser(email, password)
       .then((result) => {
         setUser(result.user);
-        console.log(result.user);
+
         navigate(location?.state ? location.state : "/");
       })
       .catch((err) => {
