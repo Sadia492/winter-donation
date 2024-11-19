@@ -4,9 +4,8 @@ A platform designed to connect compassionate donors with individuals in need, en
 
 ## 🌐 Live Demo
 
-- [Primary URL](https://winter-donation-727a4.web.app/){:target="\_blank"}
-
-- [Alternative URL](https://winter-donation1.netlify.app/){:target="\_blank"}
+- [Primary URL](https://winter-donation-727a4.web.app/)
+- [Alternative URL](https://winter-donation1.netlify.app/)
 
 ---
 
