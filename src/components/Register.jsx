@@ -58,7 +58,7 @@ export default function Register() {
           className="border-2 rounded-full gap-3 w-80 text-center py-4 px-6 flex items-center justify-center text-xl"
         >
           <FaGoogle></FaGoogle>
-          Sign In With Google
+          Sign Up With Google
         </button>
       </div>
       <div className="card bg-base-100 mx-auto w-full max-w-sm shrink-0 shadow-2xl">
