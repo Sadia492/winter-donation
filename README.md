@@ -28,6 +28,7 @@ A platform designed to connect compassionate donors with individuals in need, en
 
 ## 📦 npm Packages Used
 
+- **`aos`**: Animate on scroll for smooth and engaging page transitions.
 - **`react-helmet-async`**: Dynamically manage and update the HTML head.
 - **`react-icons`**: Use customizable icons for a modern UI.
 - **`react-lottie`**: Add animations for a visually appealing experience.
