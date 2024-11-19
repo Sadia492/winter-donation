@@ -28,17 +28,11 @@ A platform designed to connect compassionate donors with individuals in need, en
 
 ## 📦 npm Packages Used
 
-Here are the primary npm packages utilized in this project:
-
-| Package                             | Description                                         |
-| ----------------------------------- | --------------------------------------------------- |
-| `react-helmet-async`                | Dynamically manage and update the HTML head.        |
-| `react-icons`                       | Use customizable icons for a modern UI.             |
-| `react-lottie`                      | Add animations for a visually appealing experience. |
-| `react-router-dom`                  | Manage navigation and routing efficiently.          |
-| `react-slick`                       | Create beautiful carousels and sliders.             |
-| `react-toastify`                    | Display stylish toast notifications.                |
-| `react-vertical-timeline-component` | Add an elegant vertical timeline component.         |
-| `slick-carousel`                    | Complementary dependency for `react-slick`.         |
-
----
+- **`react-helmet-async`**: Dynamically manage and update the HTML head.
+- **`react-icons`**: Use customizable icons for a modern UI.
+- **`react-lottie`**: Add animations for a visually appealing experience.
+- **`react-router-dom`**: Manage navigation and routing efficiently.
+- **`react-slick`**: Create beautiful carousels and sliders.
+- **`react-toastify`**: Display stylish toast notifications.
+- **`react-vertical-timeline-component`**: Add an elegant vertical timeline component.
+- **`slick-carousel`**: Complementary dependency for `react-slick`.
