@@ -1,11 +1,15 @@
 # 🌨️ Winter Donation 🌨️
 
+## 🌨 Project Overview 🌨
+
 A platform designed to connect compassionate donors with individuals in need, ensuring warmth and comfort during harsh winter months. By facilitating easy donations and community-driven support, **Winter Donation** aims to bring hope and warmth to vulnerable communities across Bangladesh.
 
-## 🌐 Live Demo
 
-- [Primary URL](https://winter-donation-727a4.web.app/)
-- [Alternative URL](https://winter-donation1.netlify.app/)
+## 🚀 Technologies & Tools
+
+- **Frontend**: React.js
+- **Backend**: Firebase Authentication & Realtime Database
+- **Styling**: Tailwind CSS, Daisyui
 
 ---
 
@@ -18,13 +22,6 @@ A platform designed to connect compassionate donors with individuals in need, en
 
 ---
 
-## 🚀 Technologies & Tools
-
-- **Frontend**: React.js
-- **Backend**: Firebase Authentication & Realtime Database
-- **Styling**: Tailwind CSS
-
----
 
 ## 📦 npm Packages Used
 
@@ -37,3 +34,17 @@ A platform designed to connect compassionate donors with individuals in need, en
 - **`react-toastify`**: Display stylish toast notifications.
 - **`react-vertical-timeline-component`**: Add an elegant vertical timeline component.
 - **`slick-carousel`**: Complementary dependency for `react-slick`.
+
+## 🌐 Live Demo
+
+- [Primary URL](https://winter-donation-727a4.web.app/)
+- [Alternative URL](https://winter-donation1.netlify.app/)
+
+---
+
+## 🛠️ Installation
+Use the `npm install` command to install the dependencies.
+
+## 🛠️ Run
+Use the `npm run dev` command to run the project in your local server.
+
